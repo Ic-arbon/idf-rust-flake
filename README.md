@@ -17,7 +17,7 @@ $ ls -a result
 ```nix
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     esp32 = {
       url = "github:knarkzel/esp32";
       inputs.nixpkgs.follows = "nixpkgs";

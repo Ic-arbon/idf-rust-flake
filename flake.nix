@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
 
   outputs = {
@@ -10,8 +10,8 @@
     pkgs = nixpkgs.legacyPackages.x86_64-linux;
     esp32 = pkgs.dockerTools.pullImage {
       imageName = "espressif/idf-rust";
-      imageDigest = "sha256:0e1fba439a7d4cee57c5822feda8cd09ec38d55b40e402273d5c10477e53ddd4";
-      sha256 = "rUumcjsV3rKmQeGpMK93srfuQpf4OMXvbqTszJa2BXg=";
+      imageDigest = "sha256:5155a0f2dafadaabb2b2fb6a4f1d3dcb9209d814d150427622fc07e5fbda08f2";
+      sha256 = "hjkyIEMKda9SQ+6pC/z5LRhVmDMqVp518PHIsoLjPnk=";
       finalImageName = "espressif/idf-rust";
       finalImageTag = "all_latest";
     };
